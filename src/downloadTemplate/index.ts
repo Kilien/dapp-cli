@@ -12,7 +12,7 @@ function downloadTemplate(options: IPromptOption): Promise<boolean> {
     const rpUrl = repositoryUrl
       ? `direct:${repositoryUrl}`
       : (<Record<string, any>>RepositoryList)[templateName];
-    download(rpUrl, targetPath, {}, (err) => {
+    download(rpUrl, targetPath, {clone: true}, (err) => {
       if (err) {
         console.log(err);
         resolve(false);

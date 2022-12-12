@@ -1,10 +1,3 @@
-/**
- * Title: 处理prompt选择后的方法
- * Author: Jeremy Yu
- * Date: 2021-07-13
- * Update: 2021-07-21
- */
-
 import { downloadTemplate, privateClone } from './downloadTemplate';
 import { IPromptOption, ISafeListOption } from './assets/inquirer';
 import { saveLocalRepository } from '@/local';
